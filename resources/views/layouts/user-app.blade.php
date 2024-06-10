@@ -38,6 +38,7 @@
 
 		<!-- Icons css -->
 		<link href="{{ asset('admin/assets/css/icons.min.css') }}" rel="stylesheet" type="text/css" />
+        @stack('styles')
     </head>
 
     <body>
@@ -118,9 +119,11 @@
         
         <!-- Vendor js -->
         <script src="{{ asset('admin/assets/js/vendor.min.js') }}"></script>
+        <script src="{{ asset('jquery-3.7.1.min.js') }}"></script>
 
         <!-- App js -->
         <script src="{{ asset('admin/assets/js/app.min.js') }}"></script>
+        @stack('scripts')
 
     </body>
 </html>
